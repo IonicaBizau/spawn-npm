@@ -11,24 +11,44 @@ $ npm i --save spawn-npm
 ## Example
 
 ```js
-"use strict";
-
 const spawnNpm = require("spawn-npm");
 
-console.log(spawnNpm());
+// Install globally the git-stats
+let proc = spawnNpm("install", {
+    g: true
+  , _: ["git-stats@latest"]
+});
+
+// Pipe the output in the console
+proc.stdout.pipe(process.stdout);
+proc.stderr.pipe(process.stderr);
+
+// After close, do something
+proc.on("close", () => {
+    console.log("Done.");
+
+    // Add the latest oargv version as dependency to this package
+    spawnNpm("install", {
+        save: true
+      , _: ["oargv@latest"]
+    }, {
+        cwd: `${__dirname}/..`
+    });
+});
 ```
 
 ## Documentation
 
-### `spawnNpm(a, b)`
-Run npm commands by creating child processes.
+### `spawnNpm(command, options, spawnOptions)`
+Creates a spawn process running `npm <command>`.
 
 #### Params
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
+- **String** `command`: The npm command (e.g. `"install"`).
+- **Object** `options`: An object parsed by [`oargv`](https://github.com/IonicaBizau/node-oargv).
+- **Object|String** `spawnOptions`: The spawn options object. The working directory where to run the command.
 
 #### Return
-- **Number** Return description.
+- **Process** The child process.
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
