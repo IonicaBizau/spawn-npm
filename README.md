@@ -1,18 +1,20 @@
+
 # spawn-npm [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/spawn-npm.svg)](https://www.npmjs.com/package/spawn-npm) [![Downloads](https://img.shields.io/npm/dt/spawn-npm.svg)](https://www.npmjs.com/package/spawn-npm) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Run npm commands by creating child processes.
 
-## Installation
+## :cloud: Installation
 
 ```sh
 $ npm i --save spawn-npm
 ```
 
-## Example
+
+## :clipboard: Example
+
+
 
 ```js
-"use strict";
-
 const spawnNpm = require("spawn-npm");
 
 // Install globally the git-stats
@@ -39,7 +41,8 @@ proc.on("close", () => {
 });
 ```
 
-## Documentation
+## :memo: Documentation
+
 
 ### `spawnNpm(command, options, spawnOptions, cb)`
 Creates a spawn process running `npm <command>`.
@@ -53,13 +56,18 @@ Creates a spawn process running `npm <command>`.
 #### Return
 - **Process** The child process.
 
-## How to contribute
+
+
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
+## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
-## License
+
+ - [`git-module-installer`](https://github.com/IonicaBizau/git-module-installer#readme)—Clone git repositories and install their npm dependencies.
+
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
