@@ -1,5 +1,7 @@
 
-# spawn-npm [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/spawn-npm.svg)](https://www.npmjs.com/package/spawn-npm) [![Downloads](https://img.shields.io/npm/dt/spawn-npm.svg)](https://www.npmjs.com/package/spawn-npm) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+# spawn-npm
+
+ [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/spawn-npm.svg)](https://www.npmjs.com/package/spawn-npm) [![Downloads](https://img.shields.io/npm/dt/spawn-npm.svg)](https://www.npmjs.com/package/spawn-npm) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Run npm commands by creating child processes.
 
@@ -65,7 +67,9 @@ Have an idea? Found a bug? See [how to contribute][contributing].
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
 
+ - [`babel-it`](https://github.com/IonicaBizau/babel-it#readme)—A cli tool to babelify your code before npm publish.
  - [`git-module-installer`](https://github.com/IonicaBizau/git-module-installer#readme)—Clone git repositories and install their npm dependencies.
+ - [`ship-release`](https://github.com/IonicaBizau/ship-release#readme)—Publish new versions on GitHub and npm with ease.
 
 ## :scroll: License
 
