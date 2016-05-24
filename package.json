@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/IonicaBizau/spawn-npm#readme",
   "dependencies": {
-    "oargv": "^3.4.1",
+    "oargv": "^3.4.2",
     "spawno": "^1.0.0"
   },
   "files": [
